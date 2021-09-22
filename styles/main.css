@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+/* hide everything before page loads */
+html {
+  visibility: hidden;
+}
+
 body {
   margin: 0;
   background-color: var(--raisin-black);
