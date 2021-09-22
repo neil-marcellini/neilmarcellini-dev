@@ -26,6 +26,10 @@
     list-style: none;
   }
 
+  li {
+    width: min-content;
+  }
+
   .nav-links {
     display: flex;
   }
@@ -107,13 +111,19 @@
     transform: translateX(0%);
   }
 
+  .active-page {
+    border-bottom: 2px solid #276fbfff;
+  }
+
 </style>
 <div class="container">
   <div class="slide-bar"></div>
   <nav>
-    <a href="/index.html">
-      <h1>Neil Marcellini</h1>
-    </a>
+    <div class="page-link index">
+      <a class="index" href="/index.html">
+        <h1>Neil Marcellini</h1>
+      </a>
+    </div>
     <ul class="nav-links">
       <li class="close">
         <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -122,13 +132,13 @@
           </path>
         </svg>
       </li>
-      <li>
+      <li class="page-link about">
         <a href="/pages/about.html">About</a>
       </li>
-      <li>
+      <li class="page-link resume">
         <a href="/pages/resume.html">Resumé</a>
       </li>
-      <li>
+      <li class="page-link contact">
         <a href="/pages/contact.html">Contact</a>
       </li>
     </ul>

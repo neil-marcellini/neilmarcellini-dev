@@ -9,6 +9,7 @@ const define = (html) => {
           let shadow = this.attachShadow({mode: 'open'});
           shadow.innerHTML = html;
           addMenuListener(shadow)
+          activePageListener(shadow)
       }
   }
 
@@ -29,4 +30,26 @@ const addMenuListener = (shadow) => {
     burger.addEventListener('click', toggleMenu)
     closeIcon.addEventListener('click', toggleMenu)
 
+}
+
+const activePageListener = (shadow) => {
+    window.addEventListener("pageshow", () => {
+        console.log(shadow)
+        // get the page name
+        const page = location.href.split("/").slice(-1).toString().replace(".html", "")
+        console.log(page)
+        // remove the active class from all page links
+        let pageLinks = shadow.querySelectorAll('.page-link')
+        for (let pageLink of pageLinks) {
+            pageLink.classList.remove('active-page')
+        }
+        // make the current page active
+        let pageLink = shadow.querySelector(`.${page}`)
+        console.log(pageLink)
+        if (pageLink) {
+            pageLink.classList.toggle('active-page')
+        } else {
+            console.log("invalid page")
+        }
+    })
 }
