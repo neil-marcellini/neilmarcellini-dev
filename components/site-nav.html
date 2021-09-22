@@ -1,44 +1,140 @@
 <style>
-nav {
-  margin: 2rem auto;
-  padding: 0 2rem;
-  max-width: 960px;
-  display: flex;
-  align-items: baseline;
-}
-a {
-  text-decoration: none;
-  color: #f6f4f3ff;
-}
-h1 {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  margin-left: auto;
-  list-style: none;
-  display: flex;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-li:not(:last-child) {
-  padding-right: 2rem;
-}
+  nav {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    max-width: 960px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f6f4f3ff;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    margin-left: auto;
+    list-style: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  li:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .slide-bar {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .hamburger-icon {
+      display: block;
+      margin-left: auto;
+    }
+
+    .container {
+      position: relative;
+      display: block;
+      width: 100vw;
+      /* hide the slide over when pushed outside the container */
+      overflow-x: hidden;
+    }
+
+    .slide-bar,
+    .nav-links {
+      /* fixed position is key to make it expand full screen height */
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 30vw;
+      height: 100vh;
+      /* Move slide over off screen initially */
+      transform: translateX(100%);
+      /* take 0.25 seconds to do the transform with the ease-in function */
+      transition: transform 0.25s ease-in;
+    }
+
+    .nav-links {
+      padding: 0 1rem;
+      flex-direction: column;
+      z-index: 2;
+    }
+
+    .slide-bar {
+      display: block;
+      background-color: #1f1f24ff;
+      border-left: 2px solid #f6f4f3ff;
+      z-index: 1;
+    }
+
+    li {
+      margin-right: 0 !important;
+      margin-bottom: 1rem;
+    }
+
+    .close {
+      display: block;
+      margin: 0 !important;
+      align-self: flex-end;
+    }
+  }
+
+  .close-icon {
+    color: #f6f4f3ff;
+  }
+
+  .nav-active {
+    /* Show the nav in it's slide over position */
+    transform: translateX(0%);
+  }
 
 </style>
-<nav>
-  <a href="/index.html">
-    <h1>Neil Marcellini</h1>
-  </a>
-  <ul>
-    <li>
-      <a href="/pages/about.html">About</a>
-    </li>
-    <li>
-      <a href="/pages/resume.html">Resumé</a>
-    </li>
-    <li>
-      <a href="/pages/contact.html">Contact</a>
-    </li>
-  </ul>
+<div class="container">
+  <div class="slide-bar"></div>
+  <nav>
+    <a href="/index.html">
+      <h1>Neil Marcellini</h1>
+    </a>
+    <ul class="nav-links">
+      <li class="close">
+        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" fill-rule="evenodd"
+            d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z">
+          </path>
+        </svg>
+      </li>
+      <li>
+        <a href="/pages/about.html">About</a>
+      </li>
+      <li>
+        <a href="/pages/resume.html">Resumé</a>
+      </li>
+      <li>
+        <a href="/pages/contact.html">Contact</a>
+      </li>
+    </ul>
+    <svg class="hamburger-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+    </svg>
 
-</nav>
+  </nav>
+</div>
