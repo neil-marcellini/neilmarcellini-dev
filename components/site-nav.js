@@ -3,11 +3,13 @@ fetch("/components/site-nav.html")
     .then(text => define(text));
 
 function define(html) {
+    const template = document.createElement('template')
+    template.innerHTML = html
   class SiteNav extends HTMLElement {
       constructor() {
           super();
-          var shadow = this.attachShadow({mode: 'open'});
-          shadow.innerHTML = html;
+          this.attachShadow({mode: 'open'});
+          this.shadowRoot.appendChild(template.content.cloneNode(true))
       }
   }
 
