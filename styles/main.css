@@ -1,0 +1,22 @@
+:root {
+  /* colors */
+  --raisin-black: #1f1f24ff;
+  --cultured: #f6f4f3ff;
+  --celtic-blue: #276fbfff;
+  --red-salsa: #f03a47ff;
+  --redwood: #af5b5bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--raisin-black);
+  color: var(--cultured);
+}
+
+img, video, canvas, audio, iframe, embed, object  { 
+  display: block; /* Switch display mode to block, since that's what we usually want for images. */
+}
