@@ -25,3 +25,9 @@ body {
 img, video, canvas, audio, iframe, embed, object  { 
   display: block; /* Switch display mode to block, since that's what we usually want for images. */
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

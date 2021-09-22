@@ -1,0 +1,21 @@
+.hero {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 6rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  min-width: 15rem;
+  max-width: 30rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 33%;
+}
