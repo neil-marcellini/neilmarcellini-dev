@@ -19,3 +19,30 @@
   flex-shrink: 1;
   flex-basis: 33%;
 }
+
+.hero-text > * {
+  margin-top: 0;
+}
+
+.subtitle {
+  margin-bottom: 2.5rem;
+}
+
+.primary-button {
+  background-color: var(--celtic-blue);
+  padding: 1rem 0;
+  width: 8rem;
+  height: auto;
+  border-radius: 4rem;
+  font-weight: bold;
+  color: var(--cultured);
+}
+
+.primary-button:hover {
+  background-color: var(--darker-blue)
+}
+
+.primary-button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease-in;
+}

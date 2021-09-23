@@ -3,9 +3,14 @@
   --raisin-black: #1f1f24ff;
   --cultured: #f6f4f3ff;
   --celtic-blue: #276fbfff;
+  --darker-blue: rgb(1, 89, 204);
   --red-salsa: #f03a47ff;
   --redwood: #af5b5bff;
 }
+
+/* 
+Resets:
+*/
 
 * {
   box-sizing: border-box;
@@ -20,11 +25,23 @@ body {
   margin: 0;
   background-color: var(--raisin-black);
   color: var(--cultured);
+  font-family: 'Lato';
 }
 
 img, video, canvas, audio, iframe, embed, object  { 
   display: block; /* Switch display mode to block, since that's what we usually want for images. */
 }
+
+button {
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 
+Custom global styles
+*/
 
 .container {
   max-width: 960px;
