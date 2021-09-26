@@ -36,12 +36,15 @@ const activePageListener = (shadow) => {
     window.addEventListener("pageshow", () => {
         console.log(shadow)
         // get the page name
-        const page = location.href.split("/").slice(-1).toString().replace(".html", "")
+        let page = location.href.split("/").slice(-1).toString().replace(".html", "")
         console.log(page)
         // remove the active class from all page links
         let pageLinks = shadow.querySelectorAll('.page-link')
         for (let pageLink of pageLinks) {
             pageLink.classList.remove('active-page')
+        }
+        if (page === '') {
+            page = 'index'
         }
         // make the current page active
         let pageLink = shadow.querySelector(`.${page}`)
