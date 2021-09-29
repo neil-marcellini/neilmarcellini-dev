@@ -59,6 +59,7 @@
   background-color: #3A3A3A;
   display: flex;
   width: min-content;
+  height: min-content;
   border-radius: 10px;
   padding: 1rem;
   margin-right: 1rem;
@@ -66,7 +67,7 @@
 }
 
 .column-left {
-  width: 10rem;
+  width: 9.5rem;
   margin-right: 0.5rem;
 }
 
