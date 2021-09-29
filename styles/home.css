@@ -46,3 +46,57 @@
   transform: scale(0.9);
   transition: transform 0.1s ease-in;
 }
+
+.experience-card {
+  background-color: #3A3A3A;
+  display: flex;
+  width: min-content;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.column-left {
+  width: 12rem;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.experience-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: flex;
+  width: min-content;
+  align-items: center;
+  background-color: var(--cultured);
+  color: var(--raisin-black);
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  border-radius: 500px;
+  margin-bottom: 1rem;
+}
+
+
+.tag-icon {
+  transform: rotate(-90deg);
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.tag-text {
+  margin: 0;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.experience-photo {
+  width: 5rem;
+  height: auto;
+  border-radius: 10px;
+}
