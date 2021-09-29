@@ -30,12 +30,13 @@
 
 .primary-button {
   background-color: var(--celtic-blue);
-  padding: 1rem 0;
-  width: 8rem;
+  padding: 0.75rem 1rem;
+  width: min-content;
   height: auto;
-  border-radius: 4rem;
+  border-radius: 500px;
   font-weight: bold;
   color: var(--cultured);
+  text-decoration: none;
 }
 
 .primary-button:hover {
