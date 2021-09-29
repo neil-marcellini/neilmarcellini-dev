@@ -37,6 +37,7 @@
   font-weight: bold;
   color: var(--cultured);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .primary-button:hover {
@@ -100,4 +101,9 @@
   width: 5rem;
   height: auto;
   border-radius: 10px;
+}
+
+.see-more {
+  padding: 0.5rem 1rem;
+  display: inline-block;
 }
