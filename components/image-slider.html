@@ -1,84 +1,94 @@
 <style>
-.row {
-  display: flex;
-  align-items: center;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-.button-left {
-  position: relative;
-  right: 20px;
-}
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.chevron-left {
-  width: 2rem;
-  height: 2rem;
-  transform: rotate(180deg);
-}
+  button {
+    background-color: transparent;
+    border: none;
+    width: min-content;
+  }
 
-.button-right {
-  position: relative;
-  left: 20px;
-}
+  .button-left {
+    margin-right: 0.5rem;
+  }
 
-.chevron-right {
-  width: 2rem;
-  height: 2rem;
-}
+  .chevron-left {
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(180deg);
+  }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+  .button-right {
+    margin-left: 0.5rem;
+  }
 
-.images-container {
-  display: flex;
-  overflow: hidden;
-  width: 960px;
-}
+  .chevron-right {
+    width: 2rem;
+    height: 2rem;
+  }
 
-::slotted(img) {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 10px;
+  .images-container {
+    overflow: hidden;
+    width: calc(960px - 4rem);
+  }
 
-}
+  .slide {
+    display: flex;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+  }
 
-.circles {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-}
+  ::slotted(img) {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
 
-.circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: white;
-  margin-right: 0.5rem;
-}
+  }
 
+  .circles {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 0.5rem;
+  }
 </style>
 <div class="container">
   <div class="row">
-    <div class="button-left">
-      <svg class="chevron-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
-        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+    <button class="button-left">
+      <svg class="chevron-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
         <g fill="none">
           <path d="M8 4l8 8l-8 8" stroke="#f8f8f8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </g>
       </svg>
-    </div>
+    </button>
     <div class="images-container">
-      <slot name="images"></slot>
+      <div class="slide">
+        <slot name="images"></slot>
+      </div>
     </div>
-    <div class="button-right">
-      <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
-        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+    <button class="button-right">
+      <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
         <g fill="none">
           <path d="M8 4l8 8l-8 8" stroke="#f8f8f8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </g>
       </svg>
-    </div>
+    </button>
   </div>
+
 </div>
