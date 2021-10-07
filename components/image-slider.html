@@ -6,7 +6,7 @@
 
 .button-left {
   position: relative;
-  left: 20px;
+  right: 20px;
 }
 
 .chevron-left {
@@ -17,7 +17,7 @@
 
 .button-right {
   position: relative;
-  right: 20px;
+  left: 20px;
 }
 
 .chevron-right {
@@ -25,11 +25,16 @@
   height: 2rem;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .images-container {
   display: flex;
   overflow: hidden;
   width: 960px;
-  margin: 0 2rem;
 }
 
 ::slotted(img) {
@@ -39,8 +44,22 @@
 
 }
 
+.circles {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 0.5rem;
+}
+
 </style>
-<div>
+<div class="container">
   <div class="row">
     <div class="button-left">
       <svg class="chevron-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -61,7 +80,5 @@
         </g>
       </svg>
     </div>
-  </div>
-  <div class="ellipses">
   </div>
 </div>
