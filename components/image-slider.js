@@ -51,6 +51,7 @@ const defineImageSlider = (html) => {
         // add circle
         circles.appendChild(circle)
       }
+      this.setActiveCircle()
     }
 
     addButtonListeners() {
@@ -75,6 +76,19 @@ const defineImageSlider = (html) => {
       })
     }
 
+    setActiveCircle() {
+      let activeIndex = this.imageIndex - 1
+      let circles = this.shadow.querySelectorAll('.circle')
+      for (let circleIndex = 0; circleIndex < circles.length; circleIndex++) {
+        let circle = circles[circleIndex]
+        if (circleIndex === activeIndex) {
+          circle.classList.add('active-circle')
+        } else {
+          circle.classList.remove('active-circle')
+        }
+      }
+    }
+
     sliderWrap() {
       let slide = this.shadow.querySelector('.slide')
       let imageSlider = document.querySelector('image-slider')
@@ -91,6 +105,7 @@ const defineImageSlider = (html) => {
           this.imageIndex = images.length - 2;
           slide.style.transform = `translateX(${-width * this.imageIndex}px)`
         }
+        this.setActiveCircle()
       })
 
     }
