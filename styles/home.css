@@ -28,28 +28,6 @@
   margin-bottom: 2.5rem;
 }
 
-.primary-button {
-  background-color: var(--celtic-blue);
-  padding: 0.75rem 1rem;
-  width: min-content;
-  height: auto;
-  border-radius: 500px;
-  font-weight: bold;
-  color: var(--cultured);
-  text-decoration: none;
-  white-space: nowrap;
-  display: inline-block;
-}
-
-.primary-button:hover {
-  background-color: var(--darker-blue)
-}
-
-.primary-button:active {
-  transform: scale(0.9);
-  transition: transform 0.1s ease-in;
-}
-
 .experience-container {
   display: flex;
   flex-wrap: wrap;
