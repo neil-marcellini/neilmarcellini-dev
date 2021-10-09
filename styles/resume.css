@@ -15,11 +15,6 @@
   margin-bottom: 0.5rem;
 }
 
-.download-links > a {
-  text-decoration: none;
-  color: #f6f4f3ff;
-}
-
 svg:hover, svg:active {
   transform: scale(1.1);
   transition: transform ease-in-out;

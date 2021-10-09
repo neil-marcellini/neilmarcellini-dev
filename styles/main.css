@@ -67,6 +67,16 @@ footer {
   margin-bottom: 4rem;
 }
 
+a {
+  text-decoration: none;
+  color: #f6f4f3ff;
+}
+
+.hover-pop:hover, .hover-pop:active {
+  transform: scale(1.1);
+  transition: transform ease-in-out;
+}
+
 .primary-button {
   background-color: var(--celtic-blue);
   padding: 0.75rem 1rem;
