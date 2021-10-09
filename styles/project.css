@@ -15,3 +15,9 @@
     display: initial;
   }
 }
+
+li, p {
+  max-width: 75ch;
+  line-height: 1.6;
+  font-size: 18px;
+}
