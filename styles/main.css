@@ -48,3 +48,10 @@ Custom global styles
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
