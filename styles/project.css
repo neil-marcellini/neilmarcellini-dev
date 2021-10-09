@@ -1,0 +1,17 @@
+.hidden-mobile {
+  display: initial;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .hidden-desktop {
+    display: initial;
+  }
+}

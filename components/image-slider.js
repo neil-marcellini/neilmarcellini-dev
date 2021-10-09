@@ -24,16 +24,17 @@ const defineImageSlider = (html) => {
       Add clones of the first and last images so that
       the slider can smoothly wrap around.
       */
-      let imageSlider = document.querySelector('image-slider')
-      let images = imageSlider.getElementsByTagName('img')
+      console.log("adding Wrap")
+      let slot = this.shadow.querySelector('slot')
+      let images = slot.assignedElements()
       let firstImage = images[0]
       let firstClone = firstImage.cloneNode()
       firstClone.id = 'firstClone'
       let lastImage = images[images.length - 1]
       let lastClone = lastImage.cloneNode()
       lastClone.id = 'lastClone'
-      imageSlider.prepend(lastClone)
-      imageSlider.appendChild(firstClone)
+      this.prepend(lastClone)
+      this.appendChild(firstClone)
     }
 
     addCircles() {
@@ -90,9 +91,9 @@ const defineImageSlider = (html) => {
     }
 
     sliderWrap() {
+      let slot = this.shadow.querySelector('slot')
       let slide = this.shadow.querySelector('.slide')
-      let imageSlider = document.querySelector('image-slider')
-      let images = imageSlider.getElementsByTagName('img')
+      let images = slot.assignedElements()
       let width = images[0].clientWidth
       slide.addEventListener('transitionend', () => {
         if (images[this.imageIndex].id === 'firstClone') {
@@ -111,6 +112,5 @@ const defineImageSlider = (html) => {
     }
 
   }
-
   window.customElements.define('image-slider', ImageSlider);
 }

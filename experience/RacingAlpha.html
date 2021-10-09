@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neil Marcellini / Dev</title>
   <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/project.css" />
   <link href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <script src="/fouc-fix.js"></script>
 </head>
@@ -22,9 +23,18 @@
     <div class="container">
       <h1>Racing Alpha</h1>
     </div>
-    <image-slider>
+    <!-- desktop image slider -->
+    <image-slider class="hidden-mobile">
       <img slot="images" src="/assets/images/RA-Home.jpg" />
       <img slot="images" src="/assets/images/RA-Segments.jpg" />
+      <img slot="images" src="/assets/images/RA-Races.jpeg" />
+      <img slot="images" src="/assets/images/RA-Manage-Tracks.jpg" />
+    </image-slider>
+    <!-- mobile image slider -->
+    <image-slider class="hidden-desktop">
+      <img slot="images" src="/assets/images/RA-Home-Mobile.jpeg" />
+      <img slot="images" src="/assets/images/RA-Races-Mobile.jpeg" />
+      <img slot="images" src="/assets/images/RA-Manage-Tracks-Mobile.jpeg" />
     </image-slider>
   </main>
 </body>
