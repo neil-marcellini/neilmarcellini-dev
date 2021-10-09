@@ -22,6 +22,10 @@ li, .container > p {
   font-size: 18px;
 }
 
+li {
+  margin-bottom: 1rem;
+}
+
 .tech-container {
   display: flex;
   flex-wrap: wrap;
@@ -36,4 +40,8 @@ li, .container > p {
 
 .tech-photo {
   height: 80px;
+}
+
+.primary-button {
+  padding-inline: 2rem;
 }
