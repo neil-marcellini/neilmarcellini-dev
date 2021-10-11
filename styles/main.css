@@ -102,3 +102,9 @@ footer {
 .full-height {
   min-height: 100vh;
 }
+
+.rounded-photo {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}

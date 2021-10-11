@@ -1,0 +1,16 @@
+.photo-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.photo-row > p {
+  margin-top: 0;
+  width: 45ch;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.swiftui {
+  color: #006ab9;
+}
