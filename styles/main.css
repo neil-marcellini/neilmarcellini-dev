@@ -103,6 +103,15 @@ footer {
   transition: transform 0.1s ease-in;
 }
 
+.mail {
+  display: flex;
+  align-items: center;
+}
+
+.mail > .iconify {
+  margin-right: 0.5rem;
+}
+
 .full-height {
   min-height: 100vh;
 }
