@@ -11,6 +11,39 @@
   line-height: 1.6;
   font-size: 18px;
 }
+.beliefs-card {
+  background-color: #3A3A3A;
+  width: min-content;
+  height: min-content;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+}
+
+.belief {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.belief:last-child {
+  margin-bottom: 0;
+}
+
+.belief > p {
+  margin: 0;
+  width: 40ch;
+}
+
+.belief > .iconify {
+  margin-right: 1rem;
+}
+
+.other-tech {
+  margin-top: 4rem;
+}
+
 .swiftui {
   color: #006ab9;
 }
