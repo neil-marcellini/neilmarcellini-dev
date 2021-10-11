@@ -44,8 +44,16 @@
   margin-right: 1rem;
 }
 
+.tech-description {
+  max-width: 45ch;
+}
+
 .other-tech {
   margin-top: 4rem;
+}
+
+.swift {
+  color: #f05035;
 }
 
 .swiftui {

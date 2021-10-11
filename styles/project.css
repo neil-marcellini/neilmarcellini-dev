@@ -17,7 +17,7 @@
 }
 
 li, .container > p {
-  max-width: 75ch;
+  max-width: 60ch;
   line-height: 1.6;
   font-size: 18px;
 }
