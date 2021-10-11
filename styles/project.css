@@ -16,14 +16,35 @@
   }
 }
 
-li, .container > p {
+.container > p {
   max-width: 60ch;
   line-height: 1.6;
   font-size: 18px;
 }
 
-li {
+.achievement {
+  display: flex;
+  align-items: flex-start;
+  background-color: #3A3A3A;
+  width: max-content;
+  max-width: 100%;
+  height: min-content;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
+}
+
+.achievement > p {
+  margin: 0;
+  margin-top: 0.25rem;
+  max-width: 40ch;
+}
+
+.achievement > .iconify {
+  color: var(--celtic-blue);
+  flex-shrink: 0;
+  margin-right: 1rem;
 }
 
 .tech-container {
