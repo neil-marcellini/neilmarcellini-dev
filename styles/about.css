@@ -13,7 +13,8 @@
 }
 .beliefs-card {
   background-color: #3A3A3A;
-  width: min-content;
+  width: max-content;
+  max-width: 100%;
   height: min-content;
   border-radius: 10px;
   padding: 1rem;
@@ -23,6 +24,8 @@
 
 .belief {
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
   align-items: flex-start;
   margin-bottom: 1rem;
 }
@@ -33,10 +36,11 @@
 
 .belief > p {
   margin: 0;
-  width: 40ch;
+  max-width: 40ch;
 }
 
 .belief > .iconify {
+  flex-shrink: 0;
   margin-right: 1rem;
 }
 
