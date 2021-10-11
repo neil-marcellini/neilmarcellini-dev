@@ -12,18 +12,116 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
   <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/project.css" />
   <link href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <script src="/fouc-fix.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </head>
 
 <body>
   <header>
     <script src="/components/site-nav.js"></script>
     <site-nav></site-nav>
+    <script src="/components/image-slider.js"></script>
   </header>
   <main>
     <div class="container">
       <h1>Fitdigits</h1>
+    </div>
+    <!-- desktop image slider -->
+    <image-slider class="hidden-mobile">
+      <img slot="images" src="/assets/images/Fitdigits-Home.jpg" />
+      <img slot="images" src="/assets/images/Fitdigits-Sleep.jpg" />
+      <img slot="images" src="/assets/images/Fitdigits-Manual.jpg" />
+    </image-slider>
+    <!-- mobile image slider -->
+    <image-slider class="hidden-desktop">
+      <img slot="images" src="/assets/images/Fitdigits-Goals-Mobile.jpeg" />
+      <img slot="images" src="/assets/images/Fitdigits-Graph-Mobile.jpeg" />
+    </image-slider>
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        Fitdigits is a fitness tracking platform with a web app
+        and mobile apps such as iCardio and iRunner. They specialize
+        in heart rate training, personalized workouts, and coaching
+        to help users achieve their fitness goals.
+      </p>
+      <a class="primary-button" href="https://my.fitdigits.com/">Open</a>
+      <h2>My Experience</h2>
+      <p>
+        I started working at Fitdigits in May 2020 as a summer job. It was
+        my first programming job and I had a lot to learn. Over the course
+        of the summer I picked up Javascript, Angular, the older Angular JS,
+        and I improved my HTML and CSS skills. I worked on the front end of
+        their web app, and I mostly upgraded pages from Angular JS to Angular
+        in order to help modernize the app. It was great experience to work
+        with a small team of developers and we made the best of it despite
+        the isolation of the pandemic.
+      </p>
+      <h2>Some Notable Contributions</h2>
+      <div class="achievements">
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            Upgraded numerous pages from Angular JS to Angular
+          </p>
+        </div>
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            Improved data validation on forms for goals and manual entry of
+            workouts.
+          </p>
+        </div>
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            Suggested and implemented a new system for localization using
+            ngx-translate and added localization to numerous pages.
+          </p>
+        </div>
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            Added or fixed dark mode on upgraded pages.
+          </p>
+        </div>
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            Styled various graphs and making them look good on mobile.
+          </p>
+        </div>
+      </div>
+      <h2>Technologies</h2>
+      <div class="tech-container">
+        <a class="tech-box hover-pop" href="https://www.typescriptlang.org/">
+          <img src="/assets/images/angular.png" alt="Angular" class="tech-photo">
+          <p>Angular</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://www.typescriptlang.org/">
+          <img src="/assets/images/Typescript.png" alt="Typescript" class="tech-photo">
+          <p>Typescript</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+          <img src="/assets/images/HTML.png" alt="HTML" class="tech-photo">
+          <p>HTML</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+          <img src="/assets/images/CSS.png" alt="CSS" class="tech-photo">
+          <p>CSS</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://git-scm.com/">
+          <img src="/assets/images/git.png" alt="Git" class="tech-photo">
+          <p>Git</p>
+        </a>
+      </div>
     </div>
   </main>
   <footer>
