@@ -1,18 +1,48 @@
 .title {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   max-width: 816px;
 }
 
 .download-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  position: relative;
+  display: inline-block;
   margin-bottom: 1rem;
 }
 
-.download-box > p {
-  margin-bottom: 0.5rem;
+
+.download-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.download-button > .iconify {
+  margin-right: 0.5rem;
+}
+
+.download-button > p {
+  margin: 0;
+}
+
+.download-box:hover .download-links {
+  display: flex;
+}
+
+.download-links {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: #3A3A3A;
+  z-index: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+}
+
+.hover-pop > p {
+  margin: 0;
 }
 
 
