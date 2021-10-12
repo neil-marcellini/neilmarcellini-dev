@@ -22,22 +22,25 @@
   font-size: 18px;
 }
 
+.achievements {
+  max-width: 40rem;
+}
+
 .achievement {
   display: flex;
   align-items: flex-start;
-  background-color: #3A3A3A;
+  /* background-color: #3A3A3A; */
   width: max-content;
   max-width: 100%;
   height: min-content;
   border-radius: 10px;
-  padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
 
 .achievement > p {
   margin: 0;
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
   max-width: 40ch;
 }
 
@@ -63,8 +66,34 @@
   height: 80px;
 }
 
+.app-buttons {
+  display: flex;
+  gap: 1rem
+}
+
 .primary-button {
   padding-inline: 2rem;
+}
+
+.view-source {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--celtic-blue);
+  background-color: var(--cultured);
+  border-radius: 500px;
+  width: min-content;
+  white-space: nowrap;
+}
+
+.view-source > .iconify {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+.view-source:active, .view-source:hover {
+  background-color: #c5c5c5;
 }
 
 .swift {
