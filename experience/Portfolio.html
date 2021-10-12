@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/project.css" />
+  <link href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="/fouc-fix.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <script src="/components/site-nav.js"></script>
+    <site-nav></site-nav>
+    <script src="/components/image-slider.js"></script>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Portfolio</h1>
+    </div>
+    <!-- desktop image slider -->
+    <image-slider class="hidden-mobile">
+      <img slot="images" src="/assets/images/AMEL-Record.png" />
+      <img slot="images" src="/assets/images/AMEL-Log.png" />
+      <img slot="images" src="/assets/images/AMEL-Bullseye.png" />
+      <img slot="images" src="/assets/images/AMEL-Settings.png" />
+    </image-slider>
+    <!-- mobile image slider -->
+    <image-slider class="hidden-desktop">
+      <img slot="images" src="/assets/images/AMEL-Record-Mobile.png" />
+      <img slot="images" src="/assets/images/AMEL-Log-Mobile.png" />
+      <img slot="images" src="/assets/images/AMEL-Bullseye-Mobile.png" />
+      <img slot="images" src="/assets/images/AMEL-Settings-Mobile.png" />
+      <img slot="images" src="/assets/images/AMEL-Export-Mobile.png" />
+    </image-slider>
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        My portfolio website is a place to showcase my work and provide additional explanations about my experience that
+        won’t fit on my resumé. It also allows me to give employers more insight into who I am and what I do outside of
+        work.
+      </p>
+      <div class="app-buttons">
+        <a class="view-source" href="https://github.com/neil-marcellini/neilmarcellini-dev">
+          <span class="iconify" data-icon="akar-icons:github-fill" data-width="24" data-height="24"></span>
+          View Source Code
+        </a>
+
+      </div>
+      <h2>My Experience</h2>
+      <p>
+        I chose to build this site using a simple tech stack of HTML, CSS, Javascript, and Web Components. Web
+        Components were a great way to get the reusability advantages of a Javascript framework without quite as much
+        complexity. I had never used them before and I found that it was fairly easy to pick up. I was also able to
+        practice using vanilla Javascript and CSS without any frameworks. I think that reviewing the fundamentals is
+        always beneficial. I had a lot of fun building this site and trying out various designs.
+      </p>
+      <h2>Some Notable Contributions</h2>
+      <div class="achievements">
+
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40" data-height="40"></span>
+          <p>
+            Created the image slider as a web component.
+          </p>
+        </div>
+
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40" data-height="40"></span>
+          <p>
+            Created the navigation bar as a web component, with a slide
+            over navigation menu on mobile devices.
+          </p>
+        </div>
+
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40" data-height="40"></span>
+          <p>
+            Ensured that all pages have a responsive design.
+          </p>
+        </div>
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40" data-height="40"></span>
+          <p>
+            Converted my resumé to HTML, added styling to make it
+            look like paper, and made it visible on mobile without scrolling.
+          </p>
+        </div>
+
+      </div>
+      <h2>Technologies</h2>
+      <div class="tech-container">
+        <a class="tech-box hover-pop" href="https://www.javascript.com/">
+          <img src="/assets/images/Javascript.png" alt="Javascript" class="tech-photo">
+          <p>Javascript</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+          <img src="/assets/images/HTML.png" alt="HTML" class="tech-photo">
+          <p>HTML</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+          <img src="/assets/images/CSS.png" alt="CSS" class="tech-photo">
+          <p>CSS</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://git-scm.com/">
+          <img src="/assets/images/git.png" alt="Git" class="tech-photo">
+          <p>Git</p>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="copyright">
+      &copy 2021 Neil Marcellini
+    </p>
+  </footer>
+</body>
+
+</html>
