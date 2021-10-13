@@ -27,7 +27,7 @@
 }
 
 .download-box:hover .download-links {
-  display: flex;
+  display: flex !important;
 }
 
 .download-links {
