@@ -60,20 +60,22 @@ const defineImageSlider = (html) => {
       let slide = this.shadow.querySelector('.slide')
       let images = slot.assignedElements()
       let firstImage = images[0]
-      let width = firstImage.clientWidth
-      // move to the first image
-      slide.style.transform = `translateX(${-width * this.imageIndex}px)`
-      let left = this.shadow.querySelector('button.button-left')
-      left.addEventListener('click', () => {
-        this.imageIndex--
-        slide.style.transition = 'transform 0.4s ease-in-out'
-        slide.style.transform = `translateX(${-width * this.imageIndex}px)`
-      })
-      let right = this.shadow.querySelector('button.button-right')
-      right.addEventListener('click', () => {
-        this.imageIndex++
-        slide.style.transition = 'transform 0.4s ease-in-out'
-        slide.style.transform = `translateX(${-width * this.imageIndex}px)`
+      firstImage.addEventListener('load', () => {
+        this.width = firstImage.clientWidth
+        // move to the first image
+        slide.style.transform = `translateX(${-this.width * this.imageIndex}px)`
+        let left = this.shadow.querySelector('button.button-left')
+        left.addEventListener('click', () => {
+          this.imageIndex--
+          slide.style.transition = 'transform 0.4s ease-in-out'
+          slide.style.transform = `translateX(${-this.width * this.imageIndex}px)`
+        })
+        let right = this.shadow.querySelector('button.button-right')
+        right.addEventListener('click', () => {
+          this.imageIndex++
+          slide.style.transition = 'transform 0.4s ease-in-out'
+          slide.style.transform = `translateX(${-this.width * this.imageIndex}px)`
+        })
       })
     }
 
@@ -94,17 +96,16 @@ const defineImageSlider = (html) => {
       let slot = this.shadow.querySelector('slot')
       let slide = this.shadow.querySelector('.slide')
       let images = slot.assignedElements()
-      let width = images[0].clientWidth
       slide.addEventListener('transitionend', () => {
         if (images[this.imageIndex].id === 'firstClone') {
           slide.style.transition = 'none'
           this.imageIndex = images.length - this.imageIndex;
-          slide.style.transform = `translateX(${-width * this.imageIndex}px)`
+          slide.style.transform = `translateX(${-this.width * this.imageIndex}px)`
         }
         if (images[this.imageIndex].id === 'lastClone') {
           slide.style.transition = 'none'
           this.imageIndex = images.length - 2;
-          slide.style.transform = `translateX(${-width * this.imageIndex}px)`
+          slide.style.transform = `translateX(${-this.width * this.imageIndex}px)`
         }
         this.setActiveCircle()
       })
