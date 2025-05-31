@@ -77,6 +77,12 @@ const defineImageSlider = (html) => {
           slide.style.transform = `translateX(${-this.width * this.imageIndex}px)`
         })
       })
+
+      // Add resize listener to update width
+      window.addEventListener('resize', () => {
+        this.width = this.shadow.querySelector('.images-container').offsetWidth
+        slide.style.transform = `translateX(${-this.width * this.imageIndex}px)`
+      })
     }
 
     setActiveCircle() {
