@@ -2,142 +2,185 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VMG Lab</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="stylesheet" href="/styles/project.css" />
-  <link href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <script src="/fouc-fix.js"></script>
-  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMG Lab</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/project.css" />
+    <link href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="/fouc-fix.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <script src="/components/site-nav.js"></script>
-    <site-nav></site-nav>
-    <script src="/components/image-slider.js"></script>
-  </header>
-  <main>
-    <div class="container">
-      <h1>VMG Lab</h1>
-    </div>
-    <!-- desktop image slider -->
-    <image-slider class="hidden-mobile">
-      <svg slot="images" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" fill="black"/>
-        <text x="50" y="70" font-family="Arial" font-size="60" fill="white" text-anchor="middle">V</text>
-      </svg>
-      <!-- Add more images as they become available -->
-    </image-slider>
-    <!-- mobile image slider -->
-    <image-slider class="hidden-desktop">
-      <svg slot="images" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100" height="100" fill="black"/>
-        <text x="50" y="70" font-family="Arial" font-size="60" fill="white" text-anchor="middle">V</text>
-      </svg>
-      <!-- Add more images as they become available -->
-    </image-slider>
-    <div class="container">
-      <h2>About</h2>
-      <p>VMG Lab is an Apple Watch app that connects to an ultrasonic wind sensor to measure VMG and sailing efficiency.
-        It is designed to be a small, sharp tool to improve sailing performance by directly measuring it.
-      </p>
-      <h2>The Vision</h2>
-      <h3>May 31st, 2025</h3>
-      <p>
-        The VMG Lab app idea started to form as I transitioned back into sailboat racing in the 470 class, after years of racing
-        hydrofoiling kiteboards in the Formula Kite class. As a teenager, I raced 29ers and trained methodically to improve my
-        boat speed and handling. One of the hardest parts about improving in sailing is determining what actually moves the
-        needle to make you better. In the United States, there aren't regular large regattas for Olympic classes, and most
-        fleets number less than 10 or 15 active teams across the entire country. Testing the changes you have made in training
-        is a costly endeavor that often involves traveling to Europe to compete in regattas with large Olympic fleets. You can
-        become the best at the local level, but national and international excellence is the true end goal.
-      </p>
-      <p>
-        The common method for improving boat speed is "two boat testing" or "line ups" with one or more teams that are at or
-        above your skill level. One of the obvious problems with that is the top performing boat does not have anyone to push
-        them farther, and it's tricky to determine how much faster they are becoming compared to other boats. Can you tell if
-        you sailed five hundredths of a knot faster on average in the last five minutes? Probably not, unless you're already an
-        Olympic champion. Similarly, if you're a bit off the pace from the others, it's hard to tell if you're really getting
-        closer. That's not the end of the problems. There are many compounding factors in a line up, including wind shifts,
-        unequal starts, bad air, coach boat wake, etc. Any of these could be the reason one boat pulls ahead or falls behind, so
-        it's hard to know what you are really measuring and whether your changes are improving your performance or not.
+    <header>
+        <script src="/components/site-nav.js"></script>
+        <site-nav></site-nav>
+        <script src="/components/image-slider.js"></script>
+    </header>
+    <main>
+        <div class="container">
+            <h1>VMG Lab</h1>
+        </div>
+        <!-- desktop image slider -->
+        <image-slider class="hidden-mobile">
+            <img slot="images" src="/assets/images/VMGLab-Tracking.jpg" />
+            <img slot="images" src="/assets/images/VMGLab-SegmentComparison.jpg" />
+        </image-slider>
+        <!-- mobile image slider -->
+        <image-slider class="hidden-desktop">
+            <img slot="images" src="/assets/images/VMGLab-Tracking.jpg" />
+            <img slot="images" src="/assets/images/VMGLab-SegmentComparison.jpg" />
+        </image-slider>
+        <div class="container">
+            <h2>About</h2>
+            <p>VMG Lab is an Apple Watch app that connects to an ultrasonic wind sensor to measure VMG and sailing
+                efficiency.
+                It is designed to be a small, sharp tool to improve sailing performance by directly measuring it.
+            </p>
+            <h2>The Vision</h2>
+            <h3>May 31st, 2025</h3>
+            <p>
+                The VMG Lab app idea started to form as I transitioned back into sailboat racing in the 470 class, after
+                years of racing
+                hydrofoiling kiteboards in the Formula Kite class. As a teenager, I raced 29ers and trained methodically
+                to improve my
+                boat speed and handling. One of the hardest parts about improving in sailing is determining what
+                actually moves the
+                needle to make you better. In the United States, there aren't regular large regattas for Olympic
+                classes, and most
+                fleets number less than 10 or 15 active teams across the entire country. Testing the changes you have
+                made in training
+                is a costly endeavor that often involves traveling to Europe to compete in regattas with large Olympic
+                fleets. You can
+                become the best at the local level, but national and international excellence is the true end goal.
+            </p>
+            <p>
+                The common method for improving boat speed is "two boat testing" or "line ups" with one or more teams
+                that are at or
+                above your skill level. One of the obvious problems with that is the top performing boat does not have
+                anyone to push
+                them farther, and it's tricky to determine how much faster they are becoming compared to other boats.
+                Can you tell if
+                you sailed five hundredths of a knot faster on average in the last five minutes? Probably not, unless
+                you're already an
+                Olympic champion. Similarly, if you're a bit off the pace from the others, it's hard to tell if you're
+                really getting
+                closer. That's not the end of the problems. There are many compounding factors in a line up, including
+                wind shifts,
+                unequal starts, bad air, coach boat wake, etc. Any of these could be the reason one boat pulls ahead or
+                falls behind, so
+                it's hard to know what you are really measuring and whether your changes are improving your performance
+                or not.
 
-      </p>
-      <p>
-        What if you could directly and accurately measure your sailing efficiency, allowing you to continuously improve on your
-        own? That is the core idea that kicked off the VMG Lab project. VMG is the component of a sailboat's velocity in the
-        upwind direction, so in order to truly measure VMG, you need to know the wind direction and your boat's velocity. Most
-        sailing analytic platforms today compute VMG based on an estimated wind direction, found by bisecting the tacking
-        angles. It's a great approach to get some initial insights, but it is not completely accurate, especially when the wind
-        shifts, or if the sea state causes asymmetries in speed and angle between tacks. There's no good reason to estimate the
-        wind direction when it could be directly measured.
-      </p>
-      <p>
-        Aspiring Olympic sailors in the US, and likely internationally, usually do not have a direct VMG measurement all.
-        Sailing analytics regularly falls short and is underwhelming. There are two approaches generally in use today. The first
-        one is that sailors will record their session with a GPS tracking device such as a Garmin watch. At the end of their
-        long and tiring day, if spare time is available, they will manually upload that track to a sailing analytics platform.
-        Some platforms provide automatic upload, but the analysis is necessarily manual as the sailor must engage with it in
-        order to learn. Sailors may skim through their track looking at estimated VMG, speed over ground, etc. If they find a
-        section with particularly good VMG, they will want to know, "What did I do to sail well in that segment?" Without a
-        high amount of context, such as video or notes, it's impossible to know. Without accurate measurement of the wind, there
-        may be other variables influencing that improvement, such as a gust of wind or a shift. I know there are high level
-        teams in the America's Cup or SailGP that have all these elements in place, but there's nothing available to the average
-        sailor or widely in use today, that I know of.
-      </p>
-      <p>
-        The other approach to measuring sailing performance is to have an onboard device like a Vakaros recording data and
-        displaying it live. That's much closer to the right idea, because it gives you an indicator in the moment that allows
-        you to have full context for any performance changes. However, once again, most people are not measuring the wind in any
-        way and so they cannot truly measure their sailing efficiency.
-      </p>
-      <p>
-        The vision of VMG Lab is to provide a tool for sailors to accurately measure their sailing performance in the moment,
-        enabling iterative, measurable improvement. A sailor will start tracking and set up with a baseline tuning, which is
-        their current best estimate for the optimal set up and technique in those conditions. Then they will sail upwind at full
-        speed, and hit a couple physical buttons on the Apple Watch to start recording a segment. After a minute or so, they can
-        hit those same buttons to end the segment, at which point the app will display a notification with the average
-        efficiency of that segment. Efficiency is defined as the VMG per knot of true wind, and it allows for comparisons across
-        varying conditions. Next, the sailor will stop to make one change, such as moving the jib lead aft one centimeter, and
-        they will start sailing again. They can start another segment, sail for a while with the new setting, get a feel for it,
-        and then end that segment. The app will then show a notification which says whether the average efficiency increased or
-        decreased compared to the last segment and by how much. The sailor is then able to iterate on their sailing, gradually
-        improving efficiency and determining exactly what changes work and do not work. Notes can be taken via speech to text
-        AI, which allows the app to generate a report at the end of the sessions with each segment, whether it was an
-        improvement, and notes about what changed. The app automatically provides a list of lessons learned for the day with the
-        insights based on real measurements. When paired with a camera and the right sensors, it records full context that can
-        be uploaded into a sailing analytics platform, like <a href="https://sailsync.ai/" target="_blank">SailSync.ai</a>, for further detailed review and analysis during a
-        debrief.
-      </p>
-      <h2>Technologies</h2>
-      <div class="tech-container">
-        <a class="tech-box hover-pop" href="https://developer.apple.com/swift/">
-          <img src="/assets/images/Swift.png" alt="Swift" class="tech-photo">
-          <p>Swift</p>
-        </a>
-        <a class="tech-box hover-pop" href="https://developer.apple.com/documentation/swiftui/">
-          <span class="iconify swiftui" data-icon="fa-brands:swift" data-width="80" data-height="80"></span>
-          <p>SwiftUI</p>
-        </a>
-        <a class="tech-box hover-pop" href="https://developer.apple.com/watchos/">
-          <span class="iconify" data-icon="ic:baseline-apple" data-width="80" data-height="80"></span>
-          <p>watchOS</p>
-        </a>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <p class="copyright">
-      &copy 2025 Neil Marcellini
-    </p>
-  </footer>
+            </p>
+            <p>
+                What if you could directly and accurately measure your sailing efficiency, allowing you to continuously
+                improve on your
+                own? That is the core idea that kicked off the VMG Lab project. VMG is the component of a sailboat's
+                velocity in the
+                upwind direction, so in order to truly measure VMG, you need to know the wind direction and your boat's
+                velocity. Most
+                sailing analytic platforms today compute VMG based on an estimated wind direction, found by bisecting
+                the tacking
+                angles. It's a great approach to get some initial insights, but it is not completely accurate,
+                especially when the wind
+                shifts, or if the sea state causes asymmetries in speed and angle between tacks. There's no good reason
+                to estimate the
+                wind direction when it could be directly measured.
+            </p>
+            <p>
+                Aspiring Olympic sailors in the US, and likely internationally, usually do not have a direct VMG
+                measurement all.
+                Sailing analytics regularly falls short and is underwhelming. There are two approaches generally in use
+                today. The first
+                one is that sailors will record their session with a GPS tracking device such as a Garmin watch. At the
+                end of their
+                long and tiring day, if spare time is available, they will manually upload that track to a sailing
+                analytics platform.
+                Some platforms provide automatic upload, but the analysis is necessarily manual as the sailor must
+                engage with it in
+                order to learn. Sailors may skim through their track looking at estimated VMG, speed over ground, etc.
+                If they find a
+                section with particularly good VMG, they will want to know, "What did I do to sail well in that
+                segment?" Without a
+                high amount of context, such as video or notes, it's impossible to know. Without accurate measurement of
+                the wind, there
+                may be other variables influencing that improvement, such as a gust of wind or a shift. I know there are
+                high level
+                teams in the America's Cup or SailGP that have all these elements in place, but there's nothing
+                available to the average
+                sailor or widely in use today, that I know of.
+            </p>
+            <p>
+                The other approach to measuring sailing performance is to have an onboard device like a Vakaros
+                recording data and
+                displaying it live. That's much closer to the right idea, because it gives you an indicator in the
+                moment that allows
+                you to have full context for any performance changes. However, once again, most people are not measuring
+                the wind in any
+                way and so they cannot truly measure their sailing efficiency.
+            </p>
+            <p>
+                The vision of VMG Lab is to provide a tool for sailors to accurately measure their sailing performance
+                in the moment,
+                enabling iterative, measurable improvement. A sailor will start tracking and set up with a baseline
+                tuning, which is
+                their current best estimate for the optimal set up and technique in those conditions. Then they will
+                sail upwind at full
+                speed, and hit a couple physical buttons on the Apple Watch to start recording a segment. After a minute
+                or so, they can
+                hit those same buttons to end the segment, at which point the app will display a notification with the
+                average
+                efficiency of that segment. Efficiency is defined as the VMG per knot of true wind, and it allows for
+                comparisons across
+                varying conditions. Next, the sailor will stop to make one change, such as moving the jib lead aft one
+                centimeter, and
+                they will start sailing again. They can start another segment, sail for a while with the new setting,
+                get a feel for it,
+                and then end that segment. The app will then show a notification which says whether the average
+                efficiency increased or
+                decreased compared to the last segment and by how much. The sailor is then able to iterate on their
+                sailing, gradually
+                improving efficiency and determining exactly what changes work and do not work. Notes can be taken via
+                speech to text
+                AI, which allows the app to generate a report at the end of the sessions with each segment, whether it
+                was an
+                improvement, and notes about what changed. The app automatically provides a list of lessons learned for
+                the day with the
+                insights based on real measurements. When paired with a camera and the right sensors, it records full
+                context that can
+                be uploaded into a sailing analytics platform, like <a href="https://sailsync.ai/"
+                    target="_blank">SailSync.ai</a>, for further detailed review and analysis during a
+                debrief.
+            </p>
+            <h2>Technologies</h2>
+            <div class="tech-container">
+                <a class="tech-box hover-pop" href="https://developer.apple.com/swift/">
+                    <img src="/assets/images/Swift.png" alt="Swift" class="tech-photo">
+                    <p>Swift</p>
+                </a>
+                <a class="tech-box hover-pop" href="https://developer.apple.com/documentation/swiftui/">
+                    <span class="iconify swiftui" data-icon="fa-brands:swift" data-width="80" data-height="80"></span>
+                    <p>SwiftUI</p>
+                </a>
+                <a class="tech-box hover-pop" href="https://developer.apple.com/watchos/">
+                    <span class="iconify" data-icon="ic:baseline-apple" data-width="80" data-height="80"></span>
+                    <p>watchOS</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">
+            &copy 2025 Neil Marcellini
+        </p>
+    </footer>
 </body>
 
 </html>
