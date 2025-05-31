@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VMG Lab</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/project.css" />
+  <link href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="/fouc-fix.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <script src="/components/site-nav.js"></script>
+    <site-nav></site-nav>
+    <script src="/components/image-slider.js"></script>
+  </header>
+  <main>
+    <div class="container">
+      <h1>VMG Lab</h1>
+    </div>
+    <!-- desktop image slider -->
+    <image-slider class="hidden-mobile">
+      <svg slot="images" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="black"/>
+        <text x="50" y="70" font-family="Arial" font-size="60" fill="white" text-anchor="middle">V</text>
+      </svg>
+      <!-- Add more images as they become available -->
+    </image-slider>
+    <!-- mobile image slider -->
+    <image-slider class="hidden-desktop">
+      <svg slot="images" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="black"/>
+        <text x="50" y="70" font-family="Arial" font-size="60" fill="white" text-anchor="middle">V</text>
+      </svg>
+      <!-- Add more images as they become available -->
+    </image-slider>
+    <div class="container">
+      <h2>About</h2>
+      <p>VMG Lab is an Apple Watch app that connects to an ultrasonic wind sensor to measure VMG and sailing efficiency.
+        It is designed to be a small, sharp tool to improve sailing performance. The app provides real-time feedback
+        on sailing efficiency, helping sailors optimize their VMG (Velocity Made Good) and make better tactical decisions
+        on the water.
+      </p>
+      <h2>My Experience</h2>
+      <p>
+        [Your experience with VMG Lab - to be filled in]
+      </p>
+      <h2>Some Notable Contributions</h2>
+      <div class="achievements">
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            [Notable contribution 1 - to be filled in]
+          </p>
+        </div>
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            [Notable contribution 2 - to be filled in]
+          </p>
+        </div>
+        <div class="achievement">
+          <span class="iconify" data-icon="fluent:checkbox-checked-16-regular" data-width="40"
+            data-height="40"></span>
+          <p>
+            [Notable contribution 3 - to be filled in]
+          </p>
+        </div>
+      </div>
+      <h2>Technologies</h2>
+      <div class="tech-container">
+        <a class="tech-box hover-pop" href="https://developer.apple.com/swift/">
+          <img src="/assets/images/Swift.png" alt="Swift" class="tech-photo">
+          <p>Swift</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://developer.apple.com/watchos/">
+          <img src="/assets/images/watchOS.png" alt="watchOS" class="tech-photo">
+          <p>watchOS</p>
+        </a>
+        <a class="tech-box hover-pop" href="https://developer.apple.com/documentation/swiftui/">
+          <img src="/assets/images/SwiftUI.png" alt="SwiftUI" class="tech-photo">
+          <p>SwiftUI</p>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="copyright">
+      &copy 2024 Neil Marcellini
+    </p>
+  </footer>
+</body>
+
+</html>
