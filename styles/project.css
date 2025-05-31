@@ -17,13 +17,8 @@
 }
 
 .container > p {
-  max-width: 60ch;
   line-height: 1.6;
   font-size: 18px;
-}
-
-.achievements {
-  max-width: 40rem;
 }
 
 .achievement {
@@ -41,7 +36,6 @@
 .achievement > p {
   margin: 0;
   margin-top: 0.5rem;
-  max-width: 40ch;
 }
 
 .achievement > .iconify {
@@ -102,4 +96,13 @@
 
 .swiftui {
   color: #006ab9;
+}
+
+p > a {
+  color: white;
+  text-decoration: underline;
+}
+
+p > a:hover {
+  color: var(--celtic-blue);
 }
