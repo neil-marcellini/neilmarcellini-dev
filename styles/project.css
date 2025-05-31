@@ -97,3 +97,12 @@
 .swiftui {
   color: #006ab9;
 }
+
+p > a {
+  color: white;
+  text-decoration: underline;
+}
+
+p > a:hover {
+  color: var(--celtic-blue);
+}
